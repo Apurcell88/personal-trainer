@@ -9,9 +9,9 @@ const Nav = () => {
   return (
     <nav className="relative">
       <div className="flex justify-between items-center p-4">
-        <h1 className="text-white">Trainer</h1>
+        <h1 className="text-white">AP Fit</h1>
         <button onClick={() => setIsOpen(true)}>
-          <Menu className="w-8 h-8 text-white" />
+          <Menu className="w-8 h-8 text-white hover:cursor-pointer" />
         </button>
       </div>
 
