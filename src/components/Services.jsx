@@ -1,4 +1,9 @@
+"use client";
+
 import { Dumbbell, Laptop, Utensils } from "lucide-react";
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import { useEffect } from "react";
 
 const Services = () => {
   const services = [
@@ -33,18 +38,40 @@ const Services = () => {
         </div>
 
         <div className="grid gap-8 md:grid-cols-3">
-          {services.map((service, index) => (
-            <div
-              key={index}
-              className="bg-white p-6 rounded-xl shadow-md text-center"
-            >
-              <div className="flex justify-center mb-4 text-amber-500">
-                {service.icon}
-              </div>
-              <h3 className="text-xl font-semibold mb-2">{service.title}</h3>
-              <p className="text-gray-600">{service.description}</p>
-            </div>
-          ))}
+          {services.map((service, index) => {
+            const controls = useAnimation();
+            const [ref, inView] = useInView({ triggerOnce: true });
+
+            useEffect(() => {
+              if (inView) {
+                controls.start("visible");
+              }
+            }, [controls, inView]);
+
+            return (
+              <motion.div
+                key={index}
+                ref={ref}
+                initial="hidden"
+                animate={controls}
+                variants={{
+                  hidden: { opacity: 0, y: 50 },
+                  visible: {
+                    opacity: 1,
+                    y: 0,
+                    transition: { duration: 0.5, delay: index * 0.2 },
+                  },
+                }}
+                className="bg-white p-6 rounded-xl shadow-md text-center"
+              >
+                <div className="flex justify-center mb-4 text-amber-500">
+                  {service.icon}
+                </div>
+                <h3 className="text-xl font-semibold mb-2">{service.title}</h3>
+                <p className="text-gray-600">{service.description}</p>
+              </motion.div>
+            );
+          })}
         </div>
       </div>
     </section>
