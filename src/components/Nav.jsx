@@ -17,7 +17,7 @@ const Nav = () => {
 
       {/* Slide-out menu */}
       <div
-        className={`fixed top-0 right-0 h-full w-64 bg-white shadow-lg transform ${
+        className={`fixed top-0 right-0 h-full w-64 bg-white text-gray-900 shadow-lg transform ${
           isOpen ? "translate-x-0" : "translate-x-full"
         } transition-transform duration-300 ease-in-out z-50`}
       >
@@ -29,9 +29,13 @@ const Nav = () => {
         </button>
 
         <ul className="mt-16 space-y-4 p-4">
-          <li>Home</li>
+          <li>
+            <a href="/">Home</a>
+          </li>
           <li>About</li>
-          <li>Services</li>
+          <li>
+            <a href="/services">Services</a>
+          </li>
           <li>
             <a href="/contact">Contact</a>
           </li>

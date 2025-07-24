@@ -18,7 +18,7 @@ const Footer = () => {
           <ul className="space-y-1 text-sm">
             <li>
               <a
-                href="#about"
+                href="/about"
                 className="relative inline-block text-white after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:bg-amber-500 after:transition-all after:duration-300 hover:after:w-full"
               >
                 About
@@ -26,7 +26,7 @@ const Footer = () => {
             </li>
             <li>
               <a
-                href="#services"
+                href="/services"
                 className="relative inline-block text-white after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:bg-amber-500 after:transition-all after:duration-300 hover:after:w-full"
               >
                 Services
@@ -34,7 +34,7 @@ const Footer = () => {
             </li>
             <li>
               <a
-                href="#contact"
+                href="/contact"
                 className="relative inline-block text-white after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:bg-amber-500 after:transition-all after:duration-300 hover:after:w-full"
               >
                 Contact

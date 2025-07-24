@@ -4,6 +4,7 @@ import { Dumbbell, Laptop, Utensils } from "lucide-react";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
+import { useRouter } from "next/navigation";
 
 const Services = () => {
   const services = [
@@ -26,6 +27,8 @@ const Services = () => {
         "Nutrition strategies designed to support your training goals, improve energy, and help you see sustainable results.",
     },
   ];
+
+  const router = useRouter();
 
   return (
     <section className="py-12 bg-gray-900 relative">
@@ -54,6 +57,8 @@ const Services = () => {
                 ref={ref}
                 initial="hidden"
                 animate={controls}
+                whileHover={{ scale: 1.1 }}
+                transition={{ type: "spring", stiffness: 300 }}
                 variants={{
                   hidden: { opacity: 0, y: 50 },
                   visible: {
@@ -62,7 +67,8 @@ const Services = () => {
                     transition: { duration: 0.5, delay: index * 0.2 },
                   },
                 }}
-                className="bg-white p-6 rounded-xl shadow-md text-center"
+                className="bg-white p-6 rounded-xl shadow-md text-center cursor-pointer hover:shadow=lg transition-show"
+                onClick={() => router.push("/services")}
               >
                 <div className="flex justify-center mb-4 text-amber-500">
                   {service.icon}
