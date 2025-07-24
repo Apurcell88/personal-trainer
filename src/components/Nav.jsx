@@ -32,7 +32,9 @@ const Nav = () => {
           <li>Home</li>
           <li>About</li>
           <li>Services</li>
-          <li>Contact</li>
+          <li>
+            <a href="/contact">Contact</a>
+          </li>
         </ul>
       </div>
     </nav>
