@@ -51,10 +51,19 @@ const serviceDetails = [
 
 const pricingTiers = [
   {
-    title: "1-on-1 Training",
-    price: "$70 / session",
+    title: "Free Consultation",
+    price: "$0",
     features: [
-      "60-minute in-person session",
+      "Fitness & health assessment",
+      "Goal discussion",
+      "Outline of personalized plan",
+    ],
+  },
+  {
+    title: "1-on-1 Training",
+    price: "$35 / 30 mins or $60 / 60 mins",
+    features: [
+      "30 or 60 minute in-person session",
       "Fully customized workout",
       "Form correction & coaching",
     ],
@@ -124,25 +133,29 @@ const ServicesInfo = () => {
             {pricingTiers.map((tier, idx) => (
               <div
                 key={idx}
-                className="bg-white/5 backdrop-blur-md p-6 rounded-2xl shadow-lg border border-white/10 hover:scale-[1.02] transition-transform"
+                className="bg-white/5 backdrop-blur-md p-6 rounded-2xl shadow-xl border border-white/10 flex flex-col justify-between hover:scale-[1.02] transition-transform"
               >
-                <h3 className="text-xl font-semibold text-white mb-2">
-                  {tier.title}
-                </h3>
-                <p className="text-2xl font-bold text-amber-400 mb-4">
-                  {tier.price}
-                </p>
-                <ul className="list-disc list-inside text-sm text-gray-300 space-y-1 mb-4">
-                  {tier.features.map((feature, i) => (
-                    <li key={i}>{feature}</li>
-                  ))}
-                </ul>
-                <Link
-                  href="/contact"
-                  className="inline-block bg-amber-500 hover:bg-amber-600 text-black font-semibold py-2 px-4 rounded-lg transition duration-200"
-                >
-                  Contact to Get Started
-                </Link>
+                <div>
+                  <h2 className="text-xl font-semibold text-center mb-5 text-white">
+                    {tier.title}
+                  </h2>
+                  <p className="text-gray-300 text-sm mb-4 whitespace-pre-line">
+                    {tier.price}
+                  </p>
+                  <ul className="list-disc list-inside text-sm text-gray-400 space-y-1">
+                    {tier.features.map((feature, i) => (
+                      <li key={i}>{feature}</li>
+                    ))}
+                  </ul>
+                </div>
+                <div className="mt-6 text-center">
+                  <Link
+                    href="/booking"
+                    className="inline-block bg-amber-500 hover:bg-amber-600 text-black font-semibold py-2 px-4 rounded-lg transition duration-200"
+                  >
+                    Book Your Free Consultation
+                  </Link>
+                </div>
               </div>
             ))}
           </div>
