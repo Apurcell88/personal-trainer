@@ -17,7 +17,6 @@ const serviceDetails = [
       "Hands-on guidance with proper form",
       "Progress tracking & weekly adjustments",
     ],
-    cta: "Book a Session",
   },
   {
     icon: <Laptop size={36} className="text-amber-400" />,
@@ -31,7 +30,6 @@ const serviceDetails = [
       "Weekly video check-ins",
       "Form reviews and progress updates",
     ],
-    cta: "Start Coaching",
   },
   {
     icon: <Utensils size={36} className="text-amber-400" />,
@@ -45,7 +43,6 @@ const serviceDetails = [
       "Macronutrient & portion guidance",
       "Meal strategies for energy and recovery",
     ],
-    cta: "Get Nutrition Help",
   },
 ];
 
@@ -116,10 +113,10 @@ const ServicesInfo = () => {
               </div>
               <div className="mt-6 text-center">
                 <Link
-                  href="/booking"
+                  href="/contact"
                   className="inline-block bg-amber-500 hover:bg-amber-600 text-black font-semibold py-2 px-4 rounded-lg transition duration-200"
                 >
-                  {service.cta}
+                  Get in Contact With Me
                 </Link>
               </div>
             </div>

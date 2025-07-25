@@ -30,7 +30,7 @@ export async function POST(req) {
       replyTo: email,
     });
 
-    return NextResponse.json(saved, { stats: 200 });
+    return NextResponse.json(saved, { status: 200 });
   } catch (err) {
     console.error(err);
     return NextResponse.json({ error: "Server error" }, { status: 500 });

@@ -22,7 +22,7 @@ model Client {
   email     String    @unique
   goal      String
   startDate DateTime
-  createdAt DateTime
+  createdAt DateTime  @default(now())
   bookings  Booking[]
 }
 

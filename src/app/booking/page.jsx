@@ -81,10 +81,12 @@ const Booking = () => {
               onChange={handleChange}
               className="bg-gray-800 border border-gray-700 rounded-lg p-3 text-white focus:outline-none focus:ring-2 focus:ring-amber-500"
             >
-              <option>Free Consultation</option>
-              <option>1-on-1 Personal Training</option>
-              <option>Online Coaching</option>
-              <option>Nutrition Guidance</option>
+              <option value="Free Consultation">Free Consultation</option>
+              <option value="1-on-1 Personal Training">
+                1-on-1 Personal Training
+              </option>
+              <option value="Online Coaching">Online Coaching</option>
+              <option value="Nutrition Guidance">Nutrition Guidance</option>
             </select>
             <input
               type="date"
@@ -120,7 +122,7 @@ const Booking = () => {
             Submit Booking
           </button>
           <div className="flex justify-center cursor-pointer">
-            <a href="/">Cancel</a>
+            <a href="/services">Cancel</a>
           </div>
         </form>
       </div>
