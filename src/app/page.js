@@ -1,5 +1,6 @@
 import Nav from "@/components/Nav";
 import Image from "next/image";
+import Link from "next/link";
 import Services from "@/components/Services";
 import Footer from "@/components/Footer";
 
@@ -24,7 +25,7 @@ export default function Home() {
           height={110}
           className="rounded-full object-cover my-2"
         />
-        <p className="leading-relaxed text-lg">
+        <p className="leading-relaxed text-lg max-w-6xl">
           My name is Adam Purcell, and I&apos;ve been on my own fitness journey
           for the past 5 years. Along the way, I discovered a deep passion for
           bodybuilding and overall wellness. What started as a personal goal
@@ -36,9 +37,11 @@ export default function Home() {
           here to help make that happen.
         </p>
 
-        <button className="bg-amber-500 w-35 h-10 rounded-md mb-4 hover:cursor-pointer hover:scale-105 hover:bg-amber-600 transition-all duration-300 hover:shadow-lg">
-          Start Now
-        </button>
+        <Link href="/about">
+          <button className="bg-amber-500 w-35 h-10 rounded-md mb-4 hover:cursor-pointer hover:scale-105 hover:bg-amber-600 transition-all duration-300 hover:shadow-lg">
+            Start Now
+          </button>
+        </Link>
       </div>
       <Services />
       <Footer />

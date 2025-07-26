@@ -1,6 +1,7 @@
 "use client";
 
 import Nav from "@/components/Nav";
+import Footer from "@/components/Footer";
 import { Dumbbell, Laptop, Utensils } from "lucide-react";
 import Link from "next/link";
 
@@ -157,6 +158,9 @@ const ServicesInfo = () => {
             ))}
           </div>
         </div>
+      </div>
+      <div className="mt-6">
+        <Footer />
       </div>
     </section>
   );

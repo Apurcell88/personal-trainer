@@ -103,6 +103,7 @@ export async function POST(req) {
         <ul>
           <li><strong>Service:</strong> ${service}</li>
           <li><strong>Date:</strong> ${date}</li>
+          <li><strong>Time:</strong ${time}</li>
           <li><strong>Notes:</strong> ${notes}</li>
         </ul>
         <p>If you have any questions, feel free to reply to this email.</p>
