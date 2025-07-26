@@ -26,15 +26,15 @@ export default function Home() {
           className="rounded-full object-cover my-2"
         />
         <p className="leading-relaxed text-lg max-w-6xl">
-          My name is Adam Purcell, and I&apos;ve been on my own fitness journey
-          for the past 5 years. Along the way, I discovered a deep passion for
-          bodybuilding and overall wellness. What started as a personal goal
-          turned into a lifestyle, and now I&apos;m driven to help others
-          experience the same transformation. Whether it&apos;s building
-          strength, gaining confidence, or just feeling better day to day, I
-          love guiding people toward their fitness goals. I believe with the
-          right support and plan, anyone can unlock their potential—and I&apos;m
-          here to help make that happen.
+          My name is Adam Purcell (located in the Chicagoland area), and
+          I&apos;ve been on my own fitness journey for the past 5 years. Along
+          the way, I discovered a deep passion for bodybuilding and overall
+          wellness. What started as a personal goal turned into a lifestyle, and
+          now I&apos;m driven to help others experience the same transformation.
+          Whether it&apos;s building strength, gaining confidence, or just
+          feeling better day to day, I love guiding people toward their fitness
+          goals. I believe with the right support and plan, anyone can unlock
+          their potential—and I&apos;m here to help make that happen.
         </p>
 
         <Link href="/about">
