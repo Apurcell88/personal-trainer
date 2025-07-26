@@ -84,12 +84,12 @@ const pricingTiers = [
 
 const ServicesInfo = () => {
   return (
-    <section className="relative bg-gradient-to-b from-gray-950 to-gray-900 text-white py-16 px-4">
+    <section className="relative bg-gradient-to-b from-gray-900 to-gray-800 text-white ">
       <Nav />
       {/* Decorative blurred background */}
       <div className="absolute inset-0 z-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-amber-500/10 via-transparent to-transparent blur-3xl opacity-30 pointer-events-none" />
 
-      <div className="relative z-10 max-w-6xl mx-auto">
+      <div className="relative z-10 max-w-6xl mx-auto py-16 px-4">
         <h1 className="text-4xl font-bold text-center my-12">My Services</h1>
 
         <div className="grid gap-12 md:grid-cols-3">

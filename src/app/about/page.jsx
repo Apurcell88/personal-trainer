@@ -12,7 +12,7 @@ const About = async () => {
   return (
     <div className="bg-gray-900 text-white min-h-screen">
       <Nav />
-      <div className="max-w-4xl mx-auto px-4 py-12 flex flex-col items-center">
+      <div className="max-w-4xl mx-auto px-4 py-28 flex flex-col items-center">
         <h1 className="text-4xl font-bold text-amber-500 mb-6">About Me</h1>
         <p className="text-lg leading-relaxed mb-6 px-2 text-center">
           Hi, I'm Adam Purcell. My journey into fitness started over 5 years ago
